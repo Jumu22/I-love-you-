@@ -27,4 +27,36 @@
             position: absolute;
         }
         .yes {
-            background
+            background-color: green;
+            color: white;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .no {
+            background-color: gray;
+            color: white;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .dna {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #00ff00;
+            border-radius: 50%;
+            animation: move 5s linear infinite;
+        }
+        .line {
+            position: absolute;
+            width: 2px;
+            background: #00ff00;
+            animation: move 5s linear infinite;
+        }
+        @keyframes move {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                transform: translate3d(100vw, 100vh, 0);
+            }
+        }
