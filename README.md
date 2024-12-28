@@ -27,4 +27,4 @@
             position: absolute;
         }
         .yes {
-            background-color: green;
+            background
